@@ -34,12 +34,12 @@ pipeline{
                 }
                 else if(params.Action=='apply'){
                     if(params.ApplyApproval){
-                         bat 'C:\\Users\\kesavank\\Terraform\\terraform apply'
+                         bat 'C:\\Users\\kesavank\\Terraform\\terraform apply -auto-approve'
                     }
                 }
                 else if(params.Action=='destroy'){
                     if(params.DestroyApproval){
-                        bat 'C:\\Users\\kesavank\\Terraform\\terraform destroy'
+                        bat 'C:\\Users\\kesavank\\Terraform\\terraform destroy -auto-approve'
                     }
                 }
              }
